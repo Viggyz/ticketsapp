@@ -1,2 +1,8 @@
  -- type 'thisisunsafe' and click enter on the webpage in chrome to pass the ingress certificate invalid 
  (httpserror)
+
+ --delete:
+        _cluster
+        _load balancer
+        _cloud build
+        
