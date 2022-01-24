@@ -3,7 +3,6 @@ import express, { Request, Response } from "express";
 import {
   requireAuth,
   validateRequest,
-  NotFoundError,
   OrderStatus,
   BadRequestError,
 } from "@ticketingpack/common";
@@ -15,7 +14,7 @@ import { natsWrapper } from "../nats-wrapper";
 
 const router = express.Router();
 
-const EXPIRATION_WINDOW_SECONDS = 15 * 60;
+const EXPIRATION_WINDOW_SECONDS = 1 * 60;
 
 router.post(
   "/api/orders",
