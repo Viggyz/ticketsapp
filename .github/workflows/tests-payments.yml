@@ -1,12 +1,14 @@
 name: tests-payments
 
-on: 
-  pull_request
-  
-jobs: 
+on:
+  pull_request:
+    paths:
+      - "payments/**"
+
+jobs:
   build:
     runs-on: ubuntu-latest
-    steps: 
+    steps:
       - uses: actions/checkout@v2
       - name: Run Payment tests
         run: cd payments && npm install && npm run test:ci
