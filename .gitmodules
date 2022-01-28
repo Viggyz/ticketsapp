@@ -1,0 +1,3 @@
+[submodule "ticketcommon"]
+	path = ticketcommon
+	url = https://github.com/Viggyz/ticketcommon
